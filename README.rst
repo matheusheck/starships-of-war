@@ -12,10 +12,6 @@ Hyperdriver or Sublight speed.
 Installation
 ------------
 
-Supported versions of Python are: 2.6, 2.7, 3.4, 3.5 and 3.6. The
-recommended way to install this package is via `pip
-<https://pypi.python.org/pypi/pip>`_.
-
 python setup.py install
 
 .. code-block:: bash
