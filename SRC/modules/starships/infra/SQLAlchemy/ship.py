@@ -1,7 +1,7 @@
 import sqlalchemy
 from sqlalchemy import Column, Integer, String, Numeric
 
-from base import Base
+from .....shared.infra.sqlalchemy.base import Base
 
 
 class Ship(Base):
@@ -12,6 +12,7 @@ class Ship(Base):
   hyperdrivespeed = Column(Numeric)
   sublightspeed = Column(Numeric)
 
-  def __repr__(self):
-    return "<Ships(name='%s', hyperdrivespeed='%s', sublightspeed='%s')>" % (
-      self.name, self.hyperdrivespeed, self.sublightspeed)
+  def __init__(self, name, hyperdrivespeed ,sublightspeed):
+        self.name = name
+        self.hyperdrivespeed = hyperdrivespeed
+        self.sublightspeed = sublightspeed

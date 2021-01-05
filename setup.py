@@ -32,6 +32,7 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=[
         'SQLAlchemy',
+        'psycopg2'
     ],
     entry_points={
         'console_scripts': [

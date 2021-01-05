@@ -39,18 +39,31 @@ Alternatively use ``easy_install``:
 Usage
 -----
 
-Rank the Startwars Ships easy: Choose for Hyperdrive or sublight speedy and compare.
-
+Rank the Startwars Ships easy: Choose for Hyperdrive or sublight speed and compare.
+Here the Postgres connects the default port on Docker:
 
 .. code-block::
 
-    $ starships-of-war ordered --help
-    usage: starships-of-war ordered [-h] [-v]
+    $ docker run --name sqlalchemy-orm-psql \
+     -e POSTGRES_PASSWORD=pass \
+      -e POSTGRES_USER=usr \
+      -e POSTGRES_DB=starships \
+       -p 5432:5432 \
+      -d postgres
+Run starships-of-war
+
+You need to create a database called 
+
+.. code-block::
+
+    $ starships-of-war --help
+    usage: starships-of-war insert
+    usage: starships-of-war ordered [-v]
 
 
     optional arguments:
     -h, --help            show help message and reload
-    -v, --verbose         more verbose
+    -v, --verbose         more verbose return
 
 
 .. _development:
@@ -58,7 +71,7 @@ Rank the Startwars Ships easy: Choose for Hyperdrive or sublight speedy and comp
 Development
 -----------
 
-Install the ``starships-of-war`` packages (in your VM, preferable) using ``pip``:
+Install the ``starships-of-war`` depedencies using ``pipenv``:
 
 .. code-block:: bash
 
@@ -77,5 +90,4 @@ Run the tests:
 
     $ git clone https://github.com/matheusheck/starships-of-war.git
     $ cd starships-of-war
-    $ python2 setup.py test
     $ python3 setup.py test
