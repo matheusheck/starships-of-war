@@ -4,8 +4,14 @@
 starships-of-war
 ========
 
-``starships-of-war`` is a simple Python CLI CRUD application to rank starships by
-Hyperdriver or Sublight speed.
+``starships-of-war`` is a simple Python CRUD service to rank starships by
+Hyperdriver or Sublight speed. 
+Running this __main__.py the CLI connects to a Postgre Database,
+check the ships result and insert if running the 1st time, call a method to retrieve 
+a list of all starships from the Star Wars movies, sorted by the hyperdrive rating 
+(the faster the hyperdrive, the lower warp drive rating.).
+
+This db assumes -1 value for non hyperdrive modules.
 
 
 
