@@ -48,7 +48,10 @@ Install the ``starships-of-war`` dependencies using ``pipenv``:
 
 .. code-block:: bash
 
-    $ python3 
+    $ pipenv run python __main__.py   
+
+
+
 
 .. _testing:
 

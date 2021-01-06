@@ -36,7 +36,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'starships-of-war = starships_of_war:cli.run',
+            'starships-of-war = starships_of_war:rank()',
         ],
     },
     test_suite='tests',
