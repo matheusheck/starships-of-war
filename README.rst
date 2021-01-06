@@ -1,6 +1,3 @@
-.. image:: https://travis-ci.org/lukassup/python-cli.svg?branch=master
-    :target: https://travis-ci.org/lukassup/python-cli
-
 starships-of-war
 ========
 
