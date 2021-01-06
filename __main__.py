@@ -16,9 +16,15 @@ def rank():
         spaceships = ListStarshipsRankedService.execute()
 
     print('\n### All spaceships, ranked by Hyperdriver class:')
+
     for spaceship in spaceships:
-        print(f'{spaceship.name} has a {spaceship.hyperdrivespeed} hyperdriver class and a {spaceship.sublightspeed}000 sublight speed.')
-        print('')
+        if spaceship.hyperdrivespeed > 0:
+            print(f'{spaceship.name} has a {spaceship.hyperdrivespeed} hyperdriver class and a {spaceship.sublightspeed}000 sublight speed.')
+            print('')
+
+        else:
+            print(f'{spaceship.name} has no hyperdriver class but a {spaceship.sublightspeed}000 sublight speed.')
+            print('')
 
 if __name__ == '__main__':
     rank()
