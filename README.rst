@@ -55,17 +55,3 @@ Install the ``starships-of-war`` dependencies using ``pipenv``:
     $ pipenv run python __main__.py   
 
 
-
-
-.. _testing:
-
-Testing
--------
-
-Run the tests:
-
-.. code-block:: bash
-
-    $ git clone https://github.com/matheusheck/starships-of-war.git
-    $ cd starships-of-war
-    $ python3 setup.py test
