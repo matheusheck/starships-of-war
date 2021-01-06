@@ -9,4 +9,6 @@ def execute():
     spaceships = session.query(Ship).all()
     orderedShips = sorted(spaceships, key=lambda x: x.hyperdrivespeed, reverse=False)
 
+
+    session.close()
     return orderedShips
