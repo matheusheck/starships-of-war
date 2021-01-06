@@ -32,7 +32,7 @@ Run starships-of-war
 
 .. _development:
 
-Development
+Development mode
 -----------
 
 Install the ``starships-of-war`` dependencies using ``pipenv``:
@@ -41,17 +41,14 @@ Install the ``starships-of-war`` dependencies using ``pipenv``:
 
     $ git clone https://github.com/matheusheck/starships-of-war.git
     $ cd starships-of-war
-    $ pipenv shell
 
 .. _Use:
 
-Use
------------
-
-Install the ``starships-of-war`` dependencies using ``pipenv``:
+Run using ``pipenv``:
 
 .. code-block:: bash
 
+    $ pipenv shell
     $ pipenv run python __main__.py   
 
 
