@@ -3,10 +3,10 @@ import unittest
 import .src.modules.starships.services.ListStarshipsRankedService as ListStarshipsRankedService
 
 
-class TestStarshipsMethods(unittest.TestCase):
+class test_starships_methods(unittest.TestCase):
 
     def test_list(self):
-        self.assertEqual('foo'.upper(), 'FOO')
+        self.isInstance(ListStarshipsRankedService(), 'FOO')
 
     def test_ranked(self):
         self.assertTrue('FOO'.isupper())

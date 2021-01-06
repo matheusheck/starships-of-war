@@ -7,36 +7,13 @@ starships-of-war
 ``starships-of-war`` is a simple Python CLI CRUD application to rank starships by
 Hyperdriver or Sublight speed.
 
-.. _installation:
 
-Installation
-------------
-
-python setup.py install
-
-.. code-block:: bash
-
-    $ git clone https://github.com/matheusheck/starships-of-war.git
-    $ pip install ./starships-of-war
-
-For instructions on installing python and pip see "The Hitchhiker's Guide to
-Python" `Installation Guides
-<http://docs.python-guide.org/en/latest/starting/installation/>`_.
-
-Alternatively use ``easy_install``:
-
-.. code-block:: bash
-
-    $ git clone https://github.com/matheusheck/starships-of-war.git
-    $ easy_install ./starships-of-war
-
-.. _usage:
 
 Usage
 -----
 
-Rank the Startwars Ships easy: Choose for Hyperdrive or sublight speed and compare.
-Here the Postgres connects the default port on Docker:
+Have a service to rank the StarWars Ships by HyperDrive Class easy.
+Here data is persisted on Postgre on Docker connected on default port, to create this DB:
 
 .. code-block::
 
@@ -54,13 +31,24 @@ Run starships-of-war
 Development
 -----------
 
-Install the ``starships-of-war`` depedencies using ``pipenv``:
+Install the ``starships-of-war`` dependencies using ``pipenv``:
 
 .. code-block:: bash
 
     $ git clone https://github.com/matheusheck/starships-of-war.git
     $ cd starships-of-war
     $ pipenv shell
+
+.. _Use:
+
+Use
+-----------
+
+Install the ``starships-of-war`` dependencies using ``pipenv``:
+
+.. code-block:: bash
+
+    $ python3 
 
 .. _testing:
 
